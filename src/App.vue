@@ -1,0 +1,65 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+
+
+</script>
+
+<template>
+  <div id="layout">
+    <header>
+      <div class="wrapper">
+        <p>{{ msg }}</p>
+        <nav>
+          <RouterLink to="/">Events</RouterLink> |
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+    </header>
+    <RouterView />
+  </div>
+</template>
+
+<style>
+#layout {
+  font-family: monospace, ui-monospace, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 30px 0;
+}
+
+nav a {
+
+  color: #2c3e50;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+
+}
+</style>
