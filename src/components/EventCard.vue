@@ -9,13 +9,12 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink class="event-link" :to="{ name: 'event-details', params: { id: event.id } }">
+  <router-link class="event-link" :to="{ name: 'EventDetails', params: { id: event.id } }">
     <div class="event-card">
-      <!-- Display event data -->
       <h2>{{ event.title }}</h2>
       <span>@{{ event.time }} on {{ event.date }}</span>
     </div>
-  </RouterLink>
+  </router-link>
 </template>
 
 <style scoped>

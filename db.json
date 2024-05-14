@@ -39,6 +39,36 @@
         "date": "July 2, 2024",
         "time": "11:00",
         "organizer": "Eleonora"
+      },
+      {
+        "id": 564,
+        "category": "food",
+        "title": "Community Gardening",
+        "description": "Join us as we tend to the community edible plants.",
+        "location": "Flora City",
+        "date": "March 14, 2022",
+        "time": "10:00",
+        "organizer": "Fern Pollin"
+      },
+      {
+        "id": 774,
+        "category": "sustainability",
+        "title": "Beach Cleanup",
+        "description": "Help pick up trash along the shore.",
+        "location": "Playa Del Carmen",
+        "date": "July 22, 2022",
+        "time": "11:00",
+        "organizer": "Carey Wales"
+      },
+         {
+        "id": 889,
+        "category": "sustainability",
+        "title": "River Cleanup",
+        "description": "Help pick up trash in the river.",
+        "location": "Veluwen",
+        "date": "July 2, 2024",
+        "time": "11:00",
+        "organizer": "Bogdan"
       }
     ]
   }

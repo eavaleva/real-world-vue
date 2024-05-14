@@ -10,8 +10,9 @@ const apiClient = axios.create({
 });
 
 export default {
-    getEvents() {
-        return apiClient.get('/events');
+    // Modify the EventService API call to take perPage and page as arguments
+    getEvents(perPage, page) {
+        return apiClient.get("/events?_limit=" + perPage + "&_page=" + page);
     },
     getEvent(id) {
         return apiClient.get('/events/' + id);
@@ -23,5 +24,4 @@ export default {
         return apiClient.delete('/events/' + id);
     }
 }
-// Path: src/views/EventListView.vue
-// Compare this snippet from src/views/EventListView.vue:
+// Compare this snippet from src/views/EventList.vue:
