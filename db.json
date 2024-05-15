@@ -169,6 +169,106 @@
         "date": "May 3, 2024",
         "time": "06:00",
         "organizer": "Ornithology Club"
+      },
+      {
+        "id": 112,
+        "category": "wellness",
+        "title": "Meditation Workshop",
+        "description": "Discover the benefits of meditation in this guided workshop.",
+        "location": "Serenity Center",
+        "date": "June 10, 2023",
+        "time": "14:00",
+        "organizer": "Peaceful Minds"
+      },
+      {
+        "id": 223,
+        "category": "food",
+        "title": "Farmers' Market",
+        "description": "Shop for fresh produce and local goods.",
+        "location": "Downtown Square",
+        "date": "July 18, 2023",
+        "time": "08:00",
+        "organizer": "Local Growers Association"
+      },
+      {
+        "id": 334,
+        "category": "education",
+        "title": "STEM Fair",
+        "description": "Explore interactive exhibits and hands-on activities in science, technology, engineering, and math.",
+        "location": "City Library",
+        "date": "August 25, 2023",
+        "time": "10:00",
+        "organizer": "Education Foundation"
+      },
+      {
+        "id": 445,
+        "category": "community",
+        "title": "Neighborhood Block Party",
+        "description": "Join your neighbors for food, music, and fun activities.",
+        "location": "Maple Street",
+        "date": "September 30, 2023",
+        "time": "16:00",
+        "organizer": "Maple Street Association"
+      },
+      {
+        "id": 556,
+        "category": "health",
+        "title": "Blood Donation Drive",
+        "description": "Donate blood and save lives.",
+        "location": "Community Center",
+        "date": "October 12, 2023",
+        "time": "09:00",
+        "organizer": "Red Cross"
+      },
+      {
+        "id": 667,
+        "category": "arts and culture",
+        "title": "Film Festival",
+        "description": "Watch screenings of independent films from around the world.",
+        "location": "Grand Theater",
+        "date": "November 8, 2023",
+        "time": "18:00",
+        "organizer": "Film Society"
+      },
+      {
+        "id": 778,
+        "category": "sports",
+        "title": "Basketball Tournament",
+        "description": "Compete in our annual 3-on-3 basketball tournament.",
+        "location": "Sports Complex",
+        "date": "December 15, 2023",
+        "time": "10:00",
+        "organizer": "City Sports Club"
+      },
+      {
+        "id": 889,
+        "category": "technology",
+        "title": "Hackathon",
+        "description": "Collaborate with fellow coders to create innovative solutions.",
+        "location": "Tech Lab",
+        "date": "January 22, 2024",
+        "time": "09:00",
+        "organizer": "Innovators Inc."
+      },
+      {
+        "id": 990,
+        "category": "music",
+        "title": "Rock Concert",
+        "description": "Enjoy live performances by local rock bands.",
+        "location": "City Arena",
+        "date": "February 14, 2024",
+        "time": "19:00",
+        "organizer": "Rock Fest"
+      },
+      {
+        "id": 1011,
+        "category": "animal welfare",
+        "title": "Pet Care Workshop",
+        "description": "Learn how to take better care of your pets.",
+        "location": "Pet Lovers Center",
+        "date": "March 29, 2024",
+        "time": "13:00",
+        "organizer": "Happy Pets"
       }
 
     ]
