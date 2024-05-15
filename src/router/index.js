@@ -1,12 +1,16 @@
-import { createRouter, createWebHistory } from "vue-router";
-import EventList from "@/views/EventList.vue";
-import EventLayout from "@/views/event/Layout.vue";
-import EventDetails from "@/views/event/Details.vue";
-import EventRegister from "@/views/event/Register.vue";
-import EventEdit from "@/views/event/Edit.vue";
-import About from "@/views/About.vue";
-import NotFound from "@/views/NotFound.vue";
-import NetworkError from "@/views/NetworkError.vue";
+// router/index.js
+import { createRouter, createWebHistory } from 'vue-router';
+import nProgress from 'nprogress';
+import 'nprogress/nprogress.css'; // Ensure you import the CSS for nProgress
+import EventList from '@/views/EventList.vue';
+import EventLayout from '@/views/event/Layout.vue';
+import EventDetails from '@/views/event/Details.vue';
+import EventRegister from '@/views/event/Register.vue';
+import EventEdit from '@/views/event/Edit.vue';
+import About from '@/views/About.vue';
+import NotFound from '@/views/NotFound.vue';
+import NetworkError from '@/views/NetworkError.vue';
+import { GStore } from '@/stores/store.js'
 
 const routes = [
   {
@@ -35,11 +39,12 @@ const routes = [
         path: "edit",
         name: "EventEdit",
         component: EventEdit,
+        meta: { requireAuth: true }
       },
     ],
   },
   {
-    path:'/event/:afterEvent(.*)',
+    path: '/event/:afterEvent(.*)',
     redirect: to => {
       return { path: '/events/' + to.params.afterEvent }
     }
@@ -74,6 +79,29 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  nProgress.start();
+
+  const notAuthorized = true;
+  if (to.meta.requireAuth && notAuthorized) {
+    GStore.flashMessage = "You are not authorized to access this page";
+    setTimeout(() => {
+      GStore.flashMessage = "";
+    }, 3000);
+    if (from.name) {
+      next(false);
+    } else {
+      next({ path: '/' });
+    }
+  } else {
+    next();
+  }
+});
+
+router.afterEach(() => {
+  nProgress.done();
 });
 
 export default router;

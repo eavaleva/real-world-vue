@@ -80,7 +80,7 @@ h2 {
 
 @keyframes greenFade {
   from {
-    background: #42b98361;
+    background: #edeb8261;
   }
 
   to {

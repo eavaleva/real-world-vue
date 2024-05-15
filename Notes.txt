@@ -1,0 +1,9 @@
+3 Important Features of Vue Router 
+
+- Route Meta Fields
+    Allow us to include extra information with our routes. 
+        Authentication authorization 
+- Lazy Loading Routes 
+    Splits parts of our application into different JavaScript files 
+- Scroll Behavior 
+    - To make our navigation more user-friendly

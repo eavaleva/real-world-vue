@@ -3,7 +3,6 @@ import { onMounted, ref, defineProps, computed } from "vue";
 import { RouterLink, RouterView, useRouter } from "vue-router";
 import EventService from "@/services/EventService.js";
 
-
 const props = defineProps(["id"]);
 const router = useRouter();
 const id = computed(() => props.id);
