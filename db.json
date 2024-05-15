@@ -69,6 +69,107 @@
         "date": "July 2, 2024",
         "time": "11:00",
         "organizer": "Bogdan"
+      },
+      {
+        "id": 111,
+        "category": "animal welfare",
+        "title": "Dog Adoption Day",
+        "description": "Find your new canine companion at this event.",
+        "location": "Bark Park",
+        "date": "February 14, 2023",
+        "time": "10:00",
+        "organizer": "Woof Johnson"
+      },
+      {
+        "id": 222,
+        "category": "health",
+        "title": "Yoga in the Park",
+        "description": "Join us for a relaxing yoga session in the open air.",
+        "location": "Greenfield Park",
+        "date": "April 20, 2023",
+        "time": "09:00",
+        "organizer": "Lila Peace"
+      },
+      {
+        "id": 333,
+        "category": "community service",
+        "title": "Soup Kitchen Volunteer",
+        "description": "Help us serve meals to those in need.",
+        "location": "Hope Center",
+        "date": "May 5, 2023",
+        "time": "17:00",
+        "organizer": "Sam Kind"
+      },
+      {
+        "id": 444,
+        "category": "education",
+        "title": "Coding Bootcamp",
+        "description": "Learn the basics of web development in this free bootcamp.",
+        "location": "Tech Hub",
+        "date": "August 15, 2023",
+        "time": "08:00",
+        "organizer": "Code Academy"
+      },
+      {
+        "id": 555,
+        "category": "arts and culture",
+        "title": "Art Exhibition",
+        "description": "Explore the latest works by local artists.",
+        "location": "City Gallery",
+        "date": "September 12, 2023",
+        "time": "18:00",
+        "organizer": "Art Society"
+      },
+      {
+        "id": 666,
+        "category": "sports",
+        "title": "Charity Run",
+        "description": "Participate in our 5K run to raise funds for local charities.",
+        "location": "Riverfront Park",
+        "date": "October 8, 2023",
+        "time": "07:00",
+        "organizer": "Run for Hope"
+      },
+      {
+        "id": 777,
+        "category": "technology",
+        "title": "Tech Meetup",
+        "description": "Network with tech enthusiasts and professionals.",
+        "location": "Innovation Center",
+        "date": "November 22, 2023",
+        "time": "18:30",
+        "organizer": "Tech Connect"
+      },
+      {
+        "id": 888,
+        "category": "music",
+        "title": "Jazz Night",
+        "description": "Enjoy live jazz performances by local bands.",
+        "location": "Blue Note Club",
+        "date": "December 1, 2023",
+        "time": "20:00",
+        "organizer": "Jazz Society"
+      },
+      {
+        "id": 999,
+        "category": "environment",
+        "title": "Tree Planting Day",
+        "description": "Join us to plant trees and help the environment.",
+        "location": "Green Valley",
+        "date": "March 21, 2024",
+        "time": "09:00",
+        "organizer": "Eco Warriors"
+      },
+      {
+        "id": 1010,
+        "category": "animal welfare",
+        "title": "Bird Watching Tour",
+        "description": "Learn about local bird species on this guided tour.",
+        "location": "Wetland Reserve",
+        "date": "May 3, 2024",
+        "time": "06:00",
+        "organizer": "Ornithology Club"
       }
+
     ]
   }
