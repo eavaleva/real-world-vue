@@ -23,7 +23,7 @@ onMounted(() => {
   watchEffect(() => {
     loading.value = true;
     events.value = null;
-    EventService.getEvents(2, page.value)
+    EventService.getEvents(5, page.value)
       .then(response => {
         events.value = response.data;
         totalEvents.value = response.headers['x-total-count'];
