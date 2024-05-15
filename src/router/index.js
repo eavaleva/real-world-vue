@@ -92,8 +92,12 @@ router.beforeEach((to, from, next) => {
     }, 3000);
     if (from.name) {
       next(false);
-    } else {
-      next({ path: '/' });
+    } 
+    if(from.href){
+      return false
+    }
+    else {
+       ({ path: "/", query: { redirect: to.fullPath }});
     }
   } else {
     next();
