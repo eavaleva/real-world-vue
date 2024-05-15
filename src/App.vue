@@ -7,10 +7,11 @@ const GStore = inject('GStore');
 
 <template>
   <div id="layout">
-    <div id="flashMessage" v-if="GStore.flashMessage">
-      <p>{{ GStore.flashMessage }}</p>
-    </div>
+
     <header>
+      <div id="flashMessage" v-if="GStore.flashMessage">
+        <p>{{ GStore.flashMessage }}</p>
+      </div>
       <div class="wrapper">
         <nav>
           <RouterLink :to="{ name: 'EventList' }">Events</RouterLink> |
@@ -35,12 +36,14 @@ const GStore = inject('GStore');
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+
 }
 
 nav {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 0px;
   padding: 30px 0;
 
 }
@@ -70,8 +73,8 @@ h2 {
 
 #flashMessage {
   color: #2c3e50;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 1px;
+  margin: 1px 0;
   border-radius: 4px;
   animation-name: greenFade;
   animation-duration: 4s;

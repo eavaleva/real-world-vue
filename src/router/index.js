@@ -84,21 +84,13 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   nProgress.start();
 
-  const notAuthorized = true;
+   const notAuthorized = true; // Replace with actual authorization logic
   if (to.meta.requireAuth && notAuthorized) {
     GStore.flashMessage = "You are not authorized to access this page";
     setTimeout(() => {
       GStore.flashMessage = "";
     }, 3000);
-    if (from.name) {
-      next(false);
-    } 
-    if(from.href){
-      return false
-    }
-    else {
-       ({ path: "/", query: { redirect: to.fullPath }});
-    }
+    next({ name: 'EventList' }); // Redirect to EventList route
   } else {
     next();
   }
@@ -107,5 +99,6 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
   nProgress.done();
 });
+
 
 export default router;
