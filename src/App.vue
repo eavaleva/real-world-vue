@@ -38,6 +38,7 @@ nav {
   justify-content: center;
   margin-top: 10px;
   padding: 30px 0;
+
 }
 
 nav a {
@@ -59,6 +60,7 @@ h2 {
   font-size: 20px;
   margin: 0;
   padding: 0;
+
 
 }
 </style>
