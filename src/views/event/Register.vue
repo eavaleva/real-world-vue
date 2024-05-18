@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from "vue-router";
-import { defineProps, inject } from "vue";
+import { inject } from "vue";
 
 const { event } = defineProps(["event"]);
 const router = useRouter();

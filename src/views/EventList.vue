@@ -1,6 +1,6 @@
 <script setup>
 import EventCard from '@/components/EventCard.vue';
-import { ref, onMounted, computed, watchEffect, defineProps } from 'vue';
+import { ref, onMounted, computed, watchEffect } from 'vue';
 import EventService from '@/services/EventService';
 import SkeletonLoader from '@/components/SkeletonLoader.vue';
 

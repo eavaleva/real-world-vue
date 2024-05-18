@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref, defineProps, computed } from "vue";
+import { onMounted, ref, computed } from "vue";
 import { RouterLink, RouterView, useRouter } from "vue-router";
 import EventService from "@/services/EventService.js";
 
